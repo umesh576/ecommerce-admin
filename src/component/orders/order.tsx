@@ -3,8 +3,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { getAllOrders } from "@/api/order";
 import { createColumnHelper } from "@tanstack/react-table";
-import Table from "@/components/ui/table";
-import Loader from "@/components/ui/loader";
+// import Table from "@/components/ui/table";
+import Table from "../ui/table";
+// import Loader from "@/components/ui/loader";
+import Loader from "../ui/loader";
+// import { Order } from "@/interface/auth/order.interface";
 import { Order } from "@/interface/auth/order.interface";
 import toast from "react-hot-toast";
 

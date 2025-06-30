@@ -7,6 +7,8 @@ interface IProps {
 }
 
 // Create a client
+("use client");
+
 const queryClient = new QueryClient();
 
 const Provider: React.FC<IProps> = ({ children }) => {

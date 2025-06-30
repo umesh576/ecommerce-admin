@@ -1,4 +1,5 @@
-import PageHeading from "@/components/ui/page-heading";
+// import PageHeading from "@/components/ui/page-heading";
+import PageHeading from "@/component/ui/page-heading";
 
 const Page = () => {
   return (

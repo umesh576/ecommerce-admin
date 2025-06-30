@@ -1,12 +1,16 @@
 "use client";
 
-import Table from "@/components/ui/table";
+// import Table from "@/components/ui/table";
+import Table from "../ui/table";
 import { useQuery } from "@tanstack/react-query";
 import { createColumnHelper } from "@tanstack/react-table";
 import toast from "react-hot-toast";
 
-import { getAllUsers } from "@/api/users";
-import { Actions } from "../ui/table.actions";
+// import { getAllUsers } from "@/api/users";
+import { getAllUsers } from "@/api/user";
+// import { Actions } from "../ui/table.actions";
+import { Actions } from "../ui/table-action";
+// import { User } from "@/interface/auth/user.interface";
 import { User } from "@/interface/auth/user.interface";
 import Loader from "../ui/loader";
 

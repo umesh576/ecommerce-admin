@@ -4,13 +4,13 @@ import React from "react";
 import { useForm, FormProvider, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Input from "../ui/input";
-import { IProductInput } from "@/interface/auth/product.interface";
-import productInputSchema from "@/schemas/product.schema";
+import productInputSchema from "@/schema/product.schema";
 import { createProduct } from "@/api/product";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
-import FileUpload from "../ui/file-upload";
-import CategorySelect from "../ui/category-select";
+import CategorySelect from "../ui/category.select";
+import { IProductInput } from "@/interface/auth/product.interface";
+import FileUpload from "../ui/fileupload";
 const ProductForm = () => {
   const methods = useForm({
     resolver: yupResolver(productInputSchema),

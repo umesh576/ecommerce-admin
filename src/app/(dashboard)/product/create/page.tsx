@@ -1,5 +1,5 @@
-import CreateNewProduct from "@/components/products/create";
 import React from "react";
+import CreateNewProduct from "@/component/products/create";
 
 const Product = () => {
   return (

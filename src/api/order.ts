@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import api from "@/axios/api.axios";
+// import api from "@/axios/api.axios";
+// import api from "@/axios/api.axios";
+// import api from "@/axios/api.axios";
+import api from "../axios/api.axios";
 
 export const getAllOrders = async () => {
   try {

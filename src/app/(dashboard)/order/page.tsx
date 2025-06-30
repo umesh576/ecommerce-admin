@@ -1,4 +1,4 @@
-import OrderList from "@/components/orders/orders";
+import OrderList from "@/component/orders/order";
 import React from "react";
 
 const Page = () => {

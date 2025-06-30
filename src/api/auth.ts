@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+// import api from "@/axios/api.axios";
 import api from "@/axios/api.axios";
 import { ILogin } from "@/interface/auth/auth.interface";
-
 export const login = async (data: ILogin) => {
   try {
     const response = await api.post("/user/admin/login", data);

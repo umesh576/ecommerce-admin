@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { CgProfile } from "react-icons/cg";
 import { IoIosLogOut } from "react-icons/io";
+// import { useAuth } from "@/context/auth.context";
 import { useAuth } from "@/context/auth.context";
 
 export const Header = () => {

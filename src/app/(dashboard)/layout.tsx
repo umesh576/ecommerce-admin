@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/layout/header";
-import SideBar from "@/components/layout/sidebar";
+import { Header } from "@/component/layout/header";
+import SideBar from "@/component/layout/slidebar";
 import { useAuth } from "@/context/auth.context";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";

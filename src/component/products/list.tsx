@@ -1,11 +1,14 @@
 "use client";
 
-import Table from "@/components/ui/table";
+// import Table from "@/components/ui/table";
+import Table from "../ui/table";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { createColumnHelper } from "@tanstack/react-table";
-import { Actions } from "../ui/table.actions";
+// import { Actions } from "../ui/table.actions";
+import { Actions } from "../ui/table-action";
 import toast from "react-hot-toast";
 import { deleteProductById, getAllProducts } from "@/api/product";
+// import Loader from "../ui/loader";
 import Loader from "../ui/loader";
 
 type Product = {

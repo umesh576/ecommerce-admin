@@ -29,7 +29,7 @@ const Input = ({
     <div className="mb-4 tracking-wider">
       <label
         htmlFor={name}
-        className="block text-md font-semibold font-medium text-gray-700"
+        className="block text-md  font-medium text-gray-700"
       >
         {label}
       </label>
