@@ -34,7 +34,7 @@ const LoginForm = () => {
   const { mutate, isPending } = useMutation({
     mutationFn: login,
     onSuccess: (response) => {
-      console.log("response", response);
+      // console.log("response", response);
       Cookies.set("access_token", response.token, { expires: 100000 });
       localStorage.setItem("user", JSON.stringify(response.admin));
       setUser(response.admin);

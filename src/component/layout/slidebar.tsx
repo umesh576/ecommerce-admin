@@ -15,9 +15,9 @@ const SideBar = () => {
       <div className="">
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="/logo.avif"
             alt="Logo"
-            width={120}
+            width={100}
             height={60}
             className="cursor-pointer"
           />

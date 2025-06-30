@@ -10,7 +10,7 @@ import { useAuth } from "@/context/auth.context";
 export const Header = () => {
   const { user, logout } = useAuth();
 
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="bg-gray-600 p-4 flex items-center justify-between">
