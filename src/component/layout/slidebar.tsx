@@ -15,10 +15,10 @@ const SideBar = () => {
       <div className="">
         <Link href="/">
           <Image
-            src="/logo.avif"
+            src="/logo.png"
             alt="Logo"
-            width={100}
-            height={60}
+            width={1000}
+            height={1000}
             className="cursor-pointer"
           />
         </Link>
