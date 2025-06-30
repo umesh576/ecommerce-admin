@@ -1,0 +1,38 @@
+"use client";
+
+import { Header } from "@/components/layout/header";
+import SideBar from "@/components/layout/sidebar";
+import { useAuth } from "@/context/auth.context";
+import { useRouter } from "next/navigation";
+import React, { useEffect } from "react";
+
+interface IProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<IProps> = ({ children }) => {
+  const { isAuthenticated } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.replace("/login");
+    }
+  }, [isAuthenticated, router]);
+
+  return (
+    <div className="flex h-full w-full overflow-y-clip">
+      <div className="h-full w-[250px] border-r border-gray-400">
+        <SideBar />
+      </div>
+      <div className="mb-10 w-full flex flex-col flex-1">
+        <div className="h-fit ">
+          <Header />
+        </div>
+        <div className="flex-1 overflow-auto">{children}</div>
+      </div>
+    </div>
+  );
+};
+
+export default Layout;
