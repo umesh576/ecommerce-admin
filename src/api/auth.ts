@@ -5,7 +5,7 @@ import api from "@/axios/api.axios";
 import { ILogin } from "@/interface/auth/auth.interface";
 export const login = async (data: ILogin) => {
   try {
-    const response = await api.post("/user/admin/login", data);
+    const response = await api.post("/user/login", data);
     console.log(response);
     return response.data;
   } catch (error: any) {

@@ -2,19 +2,15 @@
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-// import { loginSchema } from "@/schemas/login.schema";
 import { loginSchema } from "@/schema/login.schema";
 import { LuAsterisk } from "react-icons/lu";
 import toast from "react-hot-toast";
-// import { ILogin } from "@/interface/auth/auth.interface";
-// import { IoLogIn } from "react-icons/io5";
 import { ILogin } from "@/interface/auth/auth.interface";
 import { useMutation } from "@tanstack/react-query";
 import { login } from "@/api/auth";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
-// import { useAuth } from "@/context/auth.context";
 import { useAuth } from "@/context/auth.context";
 
 const LoginForm = () => {
@@ -39,7 +35,7 @@ const LoginForm = () => {
     mutationFn: login,
     onSuccess: (response) => {
       console.log("response", response);
-      Cookies.set("access_token", response.token, { expires: 1 });
+      Cookies.set("access_token", response.token, { expires: 100000 });
       localStorage.setItem("user", JSON.stringify(response.admin));
       setUser(response.admin);
       toast.success(response?.message ?? "Login successful");
