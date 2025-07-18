@@ -39,7 +39,8 @@ const LoginForm = () => {
       localStorage.setItem("user", JSON.stringify(response.admin));
       setUser(response.admin);
       toast.success(response?.message ?? "Login successful");
-      router.replace("/");
+      // router.replace("/");
+      router.push("/");
     },
 
     onError: (error) => {
